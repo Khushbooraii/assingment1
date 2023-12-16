@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10;
+            padding: 10;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        header {
+            background-color: #26635c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: hsl(53, 69%, 78%);
+            border-radius: 8px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label,
+        input,
+        textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-item {
+            flex: 0 0 calc(20% - 10px);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .image-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+        form label:nth-child(odd) {
+            color: #b81515;
+            font-weight: bold;
+        }
+        .image-item:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        td:first-child,
+        th:first-child {
+            text-align: center;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+
+        header h1 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction:</h2>
+            <p>Hello! This is Khushboo Rai Y22. I'm currently pursuing b.tech(EE) in IIT Kanpur.</p>
+            <p>This is my first website and it's all about showcasing various elements in HTML and CSS.</p>
+            <p>I'm passionate about web development and excited to share some content with you!</p>
+        </section>
+
+        <section>
+            <h2>Simple Form:</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section>
+            <h2>Image Grid</h2>
+            <div class="image-grid">
+                <div class="image-item">
+                    <a href="https://assets.skyfilabs.com/images/blog/campusexploration-iitk.JPG" target="_blank">
+                        
+                        <img src="https://assets.skyfilabs.com/images/blog/campusexploration-iitk.JPG" >
+                        <p>New Core Lab</p>
+                    
+                </div>
+                <div class="image-item">
+                    <a href="https://cache.careers360.mobi/media/article_images/2021/8/2/iit-kanpur-featured-image.jpg">
+                        
+                    
+                        <img src="https://cache.careers360.mobi/media/article_images/2021/8/2/iit-kanpur-featured-image.jpg" >
+                    
+                        <p>Library</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://i.ytimg.com/vi/qBLomWTg9hk/maxresdefault.jpg">
+                        <img src="https://i.ytimg.com/vi/qBLomWTg9hk/maxresdefault.jpg" >
+                   
+                    <p>OAT</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://iitk.ac.in/fmfp14/home_files/iitk4.jpg">
+                        
+                        
+                        <img src="https://iitk.ac.in/fmfp14/home_files/iitk4.jpg">
+                   
+                    <p>Lecture Hall Complex</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://analyticsdrift.com/wp-content/uploads/2021/06/IIT-Kanpur-Artificial-Intelligence-Center-of-Excellence.jpg">
+                        <img src="https://analyticsdrift.com/wp-content/uploads/2021/06/IIT-Kanpur-Artificial-Intelligence-Center-of-Excellence.jpg">
+                    
+                    <p>IIT Kanpur</p>
+                </div>
+            
+            </div>
+            <div class="image-grid">
+                <div class="image-item">
+                    <a href="https://c.pxhere.com/photos/25/39/bird_bluebird_perching_bluebird_bluebird_on_perch_nature_blue_animal-1382590.jpg!d">
+                        <img src="https://c.pxhere.com/photos/25/39/bird_bluebird_perching_bluebird_bluebird_on_perch_nature_blue_animal-1382590.jpg!d">
+                    
+                    <p>Bluebird</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://www.zastavki.com/pictures/1920x1200/2012/Animals_Birds_red_Cardinal_033305_.jpg">
+                        <img src="https://www.zastavki.com/pictures/1920x1200/2012/Animals_Birds_red_Cardinal_033305_.jpg">
+                    
+                    <p>Red Cardinal</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://3.bp.blogspot.com/-lVl7oWV1pDM/U28ousp8JYI/AAAAAAAAAD4/OYUYEDunkUI/s1600/Red-Winged-Blackbird.-.jpg">
+                        <img src="https://3.bp.blogspot.com/-lVl7oWV1pDM/U28ousp8JYI/AAAAAAAAAD4/OYUYEDunkUI/s1600/Red-Winged-Blackbird.-.jpg">
+                    
+                    <p>Red Winged Blackbirds</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://1.bp.blogspot.com/-bOGhU0m2o88/UVkw38ZEAKI/AAAAAAAAC5c/vN2vXdfC9SQ/s1600/Small-Bird-+(8).jpg">
+                        <img src="https://1.bp.blogspot.com/-bOGhU0m2o88/UVkw38ZEAKI/AAAAAAAAC5c/vN2vXdfC9SQ/s1600/Small-Bird-+(8).jpg">
+                    
+                    <p>Goldfinch</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://drb960u7vv58y.cloudfront.net/resize/322530/1200/627/image.jpg">
+                        <img src="https://drb960u7vv58y.cloudfront.net/resize/322530/1200/627/image.jpg">
+                    
+                    <p>Extremely Rare Bird</p>
+                </div>
+            
+            </div>
+            <div class="image-grid">
+                <div class="image-item">
+                    <a href="https://static.wixstatic.com/media/2a75cb_8a5d3b5044524d8e8a3cd7d831a3671a~mv2.jpg/v1/fill/w_770,h_1035,al_c,q_90/2a75cb_8a5d3b5044524d8e8a3cd7d831a3671a~mv2.jpg">
+                        <img src="https://static.wixstatic.com/media/2a75cb_8a5d3b5044524d8e8a3cd7d831a3671a~mv2.jpg/v1/fill/w_770,h_1035,al_c,q_90/2a75cb_8a5d3b5044524d8e8a3cd7d831a3671a~mv2.jpg">
+                    
+                    <p>iconic painting by picasso</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://4.bp.blogspot.com/_bCTvudG7bnA/TJx3RcrM_mI/AAAAAAAAAGo/CskGRdHtOsc/s1600/Mona_Lisa.jpg">
+                        <img src="https://4.bp.blogspot.com/_bCTvudG7bnA/TJx3RcrM_mI/AAAAAAAAAGo/CskGRdHtOsc/s1600/Mona_Lisa.jpg">
+                    
+                    <p>World Famous Monalisa Painting</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://bookmypainting.com/wp-content/uploads/2019/06/starry-night-the-famous-painting-2.jpeg">
+                        <img src="https://bookmypainting.com/wp-content/uploads/2019/06/starry-night-the-famous-painting-2.jpeg">
+                    
+                    <p>Van Gogh Starry Night</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://www.jigsawplanet.com/SarahSchuler/famous-paintings?rc=face">
+                        <img src="https://www.jigsawplanet.com/SarahSchuler/famous-paintings?rc=face">
+                   
+                    <p>SarahSchuler Most famous abstract art</p>
+                </div>
+                <div class="image-item">
+                    <a href="https://i.pinimg.com/originals/94/2f/8d/942f8ddbc94de49683fc70beb898a61b.jpg">
+                        <img src="https://i.pinimg.com/originals/94/2f/8d/942f8ddbc94de49683fc70beb898a61b.jpg">
+                    
+                    <p>The Lady Of Shalot</p>
+                </div>
+            
+            </div>
+        </section>
+
+        <section>
+            
+            <h2>Course Timetable:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>8:00 AM</td>
+                        <td>Lec-ESC201</td>
+                        <td>          </td>
+                        <td>Lec-ESC201</td>
+                        <td>Tut-ESC201</td>
+                        <td>Lec-ESC201</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>9:00 AM</td>
+                        <td>Tut-MSO202</td>
+                        <td>          </td>
+                        <td>Lec-MSO202</td>
+                        <td>Lec-MSO202</td>
+                        <td>Lec-MSO202</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>10:00 AM</td>
+                        <td>Lec-ESO201</td>
+                        <td>          </td>
+                        <td>Lec-ESO201</td>
+                        <td>Tut-ESO201</td>
+                        <td>Lec-ESO201</td>
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>12:00 PM</td>
+                        <td>Lec-EE200</td>
+                        <td>          </td>
+                        <td>Lec-EE200</td>
+                        <td>Tut-EE200</td>
+                        <td>Lec-Ee200</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>2:00-5:00 PM</td>
+                        <td>Prc-ESC201</td>
+                        <td>          </td>
+                        <td>          </td>
+                        <td></td>
+                        <td>Prc-TA212</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
